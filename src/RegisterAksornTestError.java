@@ -23,14 +23,14 @@ public class RegisterAksornTestError {
 		driver.findElement(By.xpath("//span[contains(text(), 'คำนำหน้าชื่อ')]")).click();
 
 		WebElement titleSelect = driver.findElement(By.xpath("//input[@class='select2-search__field']"));
-		titleSelect.sendKeys("นาย");
+		titleSelect.sendKeys("นางสาว");
 		titleSelect.sendKeys(Keys.ENTER);
 
 		driver.findElement(By.name("first_name")).sendKeys("");
 
 		driver.findElement(By.name("last_name")).sendKeys("");
 
-		new Select(driver.findElement(By.xpath("//*[@id=\"gender\"]"))).selectByValue("M");
+		new Select(driver.findElement(By.xpath("//*[@id=\"gender\"]"))).selectByValue("N");
 
 		driver.findElement(By.xpath("//*[@id=\"select2-birth_year-container\"]")).click();
 
@@ -42,10 +42,10 @@ public class RegisterAksornTestError {
 
 		driver.findElement(By.name("mobile_no")).sendKeys("");
 
-		driver.findElement(By.name("password")).sendKeys("a123456789"); // Replace with the decrypted
+		driver.findElement(By.name("password")).sendKeys("Dream4183113"); // Replace with the decrypted
 																		// password
 
-		driver.findElement(By.name("password_confirmation")).sendKeys("a123456789"); // Replace
+		driver.findElement(By.name("password_confirmation")).sendKeys("Dream4183113"); // Replace
 																						// with
 																						// the
 																						// decrypted
@@ -57,7 +57,7 @@ public class RegisterAksornTestError {
 		driver.findElement(By.xpath("//*[@id=\"select2-school_id-container\"]/span")).click();
 
 		WebElement schoolSelect = driver.findElement(By.xpath("/html/body/span/span/span[1]/input"));
-		schoolSelect.sendKeys("สิรินธรราชวิทยาลัย");
+		schoolSelect.sendKeys("วิทยาลัยเทคโนโลยีบริหารธุรกิจกาญจนบุรี");
 		Thread.sleep(1000);
 		schoolSelect.sendKeys(Keys.ENTER);
 
